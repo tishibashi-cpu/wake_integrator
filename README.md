@@ -74,4 +74,4 @@ python plot_wake.py --dir "integrated wake/version2.2/2021c_physics"
 - 中間 parquet の読み書きには pyarrow が必要（`pip install pyarrow`）。
 
 ## Wakeデータ
-- Wakeデータは SuperKEKB International Task Force TMCI Subgroup の indicoページ（Impedance data repository: https://kds.kek.jp/event/40318/）から入手可能。
+- Wakeデータは SuperKEKB International Task Force TMCI Subgroup のindicoページ（[Impedance data repository](https://kds.kek.jp/event/40318/)）から入手可能。
