@@ -1,0 +1,55 @@
+# ---- このツールの生成物 ----
+# 計算結果の出力先（自動生成されるのでコミットしない）
+integrated wake/
+# 0_ 等の旧プレフィックス付きで運用する場合のため
+0_integrated wake/
+# 中間データ・図（出力ディレクトリ内にも入るが念のため）
+intermediate/
+*.parquet
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.installed.cfg
+*.egg
+
+# 仮想環境
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ---- テスト・キャッシュ ----
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints
+.coverage
+htmlcov/
+
+# ---- エディタ・OS ----
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+__MACOSX/
+Thumbs.db
+
+# ---- 任意: 入力 wake データを管理対象外にする場合 ----
+# 大きい・別管理にしたい場合は以下のコメントを外す（コンポーネントの directory 群）
+# v_collimator/
+# h_collimator/
+# ARES/
+# BPM/
+# resistive wall/
+# CSR/
+# ... など comp_list の directory に対応するフォルダ
