@@ -60,7 +60,7 @@ python plot_wake.py --dir "integrated wake/version2.2/2021c_physics"
 - **リング**: 成分名（`QC1RP`→LER / `QC1RE`→HER）と親ディレクトリ名（`ler`/`her`）の
   両方で判定し、食い違えば警告（成分名を優先採用）。
 - **コリメータ**: `D##V#`/`D##H#` 形式の名前を `directory` 単位でグループ化し、
-  `aperture` の要素数で自動振り分け。2 値=両ジョー、1 値=片ジョー（knife-edge）。
+  `aperture` の要素数で自動振り分け。2 値=両ジョー、1 値=片ジョー。
   新しいコリメータはパラメータファイルに 1 行追加するだけで対応する。
 
 ## 仕様メモ
@@ -72,3 +72,6 @@ python plot_wake.py --dir "integrated wake/version2.2/2021c_physics"
   マージ後の隣接インデックス間隔を dz に使う。両格子が偶然完全一致すると dz=0 に
   なり得るので、格子構成を変える場合は注意。
 - 中間 parquet の読み書きには pyarrow が必要（`pip install pyarrow`）。
+
+## Wakeデータ
+- Wakeデータは SuperKEKB International Task Force TMCI Subgroup の indicoページ（Impedance data repository: https://kds.kek.jp/event/40318/）から入手可能。
